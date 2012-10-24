@@ -55,6 +55,15 @@
 
 </head>
 <body>
+<div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=251716358172621";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
   <div id="wrapper">
     <img src="oryaakov.png" class="logo" alt="אור יעקב" />
     <img src="guitar-teacher-in-tel-aviv.png" class="slogan" alt="מורה
@@ -71,7 +80,7 @@
 
     <div class="social-buttons">
       <div class="facebook-like-wrapper">
-        <iframe src="http://www.facebook.com/plugins/like.php?app_id=251716358172621&amp;href=http%3A%2F%2Fwww.oryaakov.co.il%2F&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
+        <div class="fb-like" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false"></div>
       </div>
 
       <div class="google-plus-wrapper">
